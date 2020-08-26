@@ -63,7 +63,7 @@ public struct KAPinFieldAppearance {
     public var backActiveColor : UIColor?
     public var backBorderActiveColor : UIColor?
     public var backRounded : Bool = false
-    public var keyboardType: UIKeyboardType = .default
+    public var keyboardType: UIKeyboardType = .numberPad
 }
 
 // Mark: - KAPinField Class
