@@ -142,12 +142,12 @@ public class KAPinField : UITextField {
     
     public override var keyboardAppearance: UIKeyboardAppearance {
         get { return self.invisibleField.keyboardAppearance }
-        set { self.invisibleField.keyboardAppearance = newValue}
+        set { self.invisibleField.keyboardAppearance = newValue }
     }
     
     public override var keyboardType: UIKeyboardType {
         get { return self.invisibleField.keyboardType }
-        set { self.invisibleField.keyboardType = newValue}
+        set { self.invisibleField.keyboardType = newValue }
     }
     
     override public func awakeFromNib() {
@@ -331,8 +331,6 @@ public class KAPinField : UITextField {
         self.invisibleField.autocapitalizationType = .none
         self.invisibleField.autocorrectionType = .no
         self.invisibleField.spellCheckingType = .no
-
-        self.invisibleField.keyboardType = self.appearance.keyboardType
         
         if #available(iOS 12.0, *) {
             // Show possible prediction on iOS >= 12
@@ -430,6 +428,7 @@ public class KAPinField : UITextField {
         
         self.sanitizeText()
         
+        self.invisibleField.keyboardType = self.appearance.keyboardType
         
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = .center

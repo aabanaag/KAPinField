@@ -111,6 +111,7 @@ class ViewController: UIViewController {
             pinField.appearance.backActiveColor = UIColor.clear
             pinField.appearance.backBorderActiveColor = UIColor.clear
             pinField.appearance.backRounded = false
+            pinField.appearance.keyboardType = .default
             
             self.refreshButton.setTitleColor(UIColor.white, for: .normal)
             self.refreshButton.backgroundColor = UIColor.white.withAlphaComponent(0.1)
@@ -123,6 +124,7 @@ class ViewController: UIViewController {
             pinField.properties.animateFocus = false
             pinField.properties.isUppercased = false
             pinField.properties.validCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            
             
             let startIndex = self.targetCode.index(self.targetCode.startIndex, offsetBy: 0)
             let endIndex = self.targetCode.index(self.targetCode.startIndex, offsetBy: 1)
@@ -143,6 +145,7 @@ class ViewController: UIViewController {
             pinField.appearance.backActiveColor = UIColor.clear
             pinField.appearance.backBorderActiveColor = self.blueColor
             pinField.appearance.backRounded = false
+            pinField.appearance.keyboardType = .numberPad
             
             self.refreshButton.setTitleColor(self.blueColor, for: .normal)
             self.refreshButton.backgroundColor = UIColor.clear
