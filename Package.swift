@@ -1,12 +1,13 @@
 import PackageDescription
 
 let package = Package(
-name: "KAPinField",
-exclude: [
-    "xample"
-],
-targets: [
-    Target(
-        name: "KAPinField"
-    )
-]
+    name: "KAPinField",
+    exclude: [
+        "Example"
+    ],
+    targets: [
+        Target(
+            name: "KAPinField"
+        )
+    ]
+)

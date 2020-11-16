@@ -634,6 +634,10 @@ public enum KA_MonospacedFont {
     case menloBoldItalic(CGFloat)
     case menloItalic(CGFloat)
     case menlo(CGFloat)
+    case helveticaNeue(CGFloat)
+    case helveticaNeueBold(CGFloat)
+    case helveticaNeueItalic(CGFloat)
+    case helveticaNeueBoldItalic(CGFloat)
     
     func font() -> UIFont {
         switch self {
@@ -661,6 +665,14 @@ public enum KA_MonospacedFont {
             return UIFont(name: "Menlo-Italic", size: size)!
         case .menlo(let size) :
             return UIFont(name: "Menlo-Regular", size: size)!
+        case .helveticaNeue(let size):
+            return UIFont(name: "HelveticaNeue", size: size)!
+        case .helveticaNeueItalic(let size):
+            return UIFont(name: "HelveticaNeue-Italic", size: size)!
+        case .helveticaNeueBold(let size):
+            return UIFont(name: "HelveticaNeue-Bold", size: size)!
+        case .helveticaNeueBoldItalic(let size):
+            return UIFont(name: "HelveticaNeue-BoldItalic", size: size)!
         }
     }
 }
