@@ -422,9 +422,10 @@ public class KAPinField : UITextField {
             v.layer.cornerRadius = self.appearance.backCornerRadius
         }
         
-        if (UIPasteboard.general.string == self.invisibleText && isRightToLeft) {
-            self.invisibleField.text = String(self.invisibleText.reversed())
-        }
+        // Disabled notifications on iOS 14
+//        if (UIPasteboard.general.string == self.invisibleText && isRightToLeft) {
+//            self.invisibleField.text = String(self.invisibleText.reversed())
+//        }
         
         self.sanitizeText()
         
